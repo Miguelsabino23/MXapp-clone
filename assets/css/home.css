@@ -1,0 +1,23 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+    align-items: center;
+    position: absolute;
+    color: #ffffff;
+    line-height: 15px;
+}
+
+.home__first__paragraph {
+    letter-spacing: 5px;
+}
+
+#home h2 {
+    font-size: 50px;
+}
+
+.home__second__paragraph {
+    font-size: 20px;
+    margin-bottom: 80px;
+}
