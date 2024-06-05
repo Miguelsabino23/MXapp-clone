@@ -1,18 +1,25 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
+    
+    slidesPerView: 4,
+    spaceBetween: 10,
     loop: true,
 
-    // If we need pagination
+    
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
 
-    // Navigation arrows
+   
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
+    autoplay: {
+        delay: 5000,
+        pauseOnMouseEnter: true,
+    },
+
+    
 })
