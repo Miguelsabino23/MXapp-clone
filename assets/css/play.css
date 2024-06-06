@@ -51,7 +51,12 @@
     left: 0;
     top: 0;
     z-index: 100;
-    display: none;
+    /* display: none; */
+}
+
+.play__block {
+    width: 400px;
+    height: 400px;
 }
 
 .play__blackdrop {
@@ -60,6 +65,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 101;
+    cursor: pointer;
 }
 
 .play__hidden {
@@ -68,4 +74,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 102;
+}
+
+.play__hidden iframe {
+    width: 54.5vw;
+    height: 69.5vh;
+    user-select: none;
+}
+
+.play__button {
+    color: #ffffff;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    position: absolute;
+    cursor: pointer;
+    transition: ease-in 3s;
 }
