@@ -59,6 +59,11 @@
     height: 400px;
 }
 
+.play__block {
+    width: 400px;
+    height: 400px;
+}
+
 .play__blackdrop {
     position: absolute;
     width: 100%;
