@@ -7,7 +7,7 @@ for (let index = 0; index < acordion.length; index++) {
         acordionColapse.forEach((collapse) => (collapse.style.height = '0px'))
 
         if (height === '0px' || height === '') {
-            acordionColapse[index].style.height = '100px'
+            acordionColapse[index].style.height = '100%'
         }
     })
 }
