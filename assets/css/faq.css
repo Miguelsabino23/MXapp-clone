@@ -49,7 +49,8 @@
 }
 
 .faq__acordion__collapse {
-    display: none;
+    overflow: hidden;
+    height: 0%;
 }
 
 .faq__acordion__body {
