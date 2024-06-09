@@ -1,0 +1,88 @@
+#contact {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.contact__container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #4c4d4d;
+}
+
+.contact__contact {
+    text-align: center;
+}
+
+.contact__title {
+    font-size: 35px;
+}
+
+.contact__paragraph {
+    font-size: 20px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__input,
+.contact__textarea {
+    padding: 14px 10px;
+    margin-bottom: 28px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    resize: none;
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+    color: #b3b6b8;
+}
+
+.contact__button {
+    padding: 16px 30px;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #6f42c1;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.headquarter {
+}
+
+.headquarter__title {
+    font-size: 35px;
+}
+
+.headquarter__hr {
+    margin-left: 0;
+}
+
+.headquarter__paragraph {
+    font-size: 20px;
+}
+
+.headquarter__icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+}
+
+.headquarter__icon i {
+    font-size: 24px;
+}
+
+.headquarter__info__title {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.headquarter__info__paragraph {
+    margin-left: 30px;
+}
