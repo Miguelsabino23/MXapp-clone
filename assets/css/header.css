@@ -22,7 +22,7 @@ html {
     transition: ease-in-out 0.4s;
 }
 
-.back__to__top span i {
+.back__to__top a i {
     font-weight: 700;
     color: #ffffff;
     margin-top: 6px;
