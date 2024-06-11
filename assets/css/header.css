@@ -86,7 +86,7 @@ body {
     font-size: 10.5pt;
 }
 
-.header__nav ul li a:hover {
+.header__nav ul li a:hover, .header__nav ul li a.active {
     opacity: 0.8;
 }
 
@@ -97,12 +97,18 @@ body {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.8);
     transition: width 0.5s ease, left 0.5s ease;
     transition-delay: 0.1s;
 }
 
 .header__nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    opacity: 0.8;
+}
+
+.header__nav ul li a.active::after {
     width: 100%;
     left: 0;
     opacity: 0.8;
