@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="./assets/css/download.css">
         <link rel="stylesheet" href="./assets/css/faq.css">
         <link rel="stylesheet" href="./assets/css/subscribe.css">
+        <link rel="stylesheet" href="./assets/css/contact.css">
+        <link rel="stylesheet" href="./assets/css/footer.css">
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -22,8 +24,14 @@
         <title>MX-app clone</title>
     </head>
     <body>
-        <div class="background__paralax">
+        <div class="back__to__top">
+            <a href="#headerr">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+        <div class="background__paralax" id="headerr">
             <header id="header">
+                <div class="header__container">
                 <div class="header__logo">
                     <a href="https://harnishdesign.net/">
                         <img
@@ -34,14 +42,14 @@
                 </div>
                 <nav class="header__nav">
                     <ul>
-                        <li><a href="#header">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">FEATURES</a></li>
-                        <li><a href="">SCREENSHOT</a></li>
-                        <li><a href="">TESTIMONIAL</a></li>
-                        <li><a href="">PRICING</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="#headerr" class="nav__link">HOME</a></li>
+                        <li><a href="#about" class="nav__link">ABOUT</a></li>
+                        <li><a href="#features" class="nav__link">FEATURES</a></li>
+                        <li><a href="#screenshot" class="nav__link">SCREENSHOT</a></li>
+                        <li><a href="#testimonial" class="nav__link">TESTIMONIAL</a></li>
+                        <li><a href="#pricing" class="nav__link">PRICING</a></li>
+                        <li><a href="#faq" class="nav__link">FAQ</a></li>
+                        <li><a href="#contact" class="nav__link">CONTACT US</a></li>
                         <li class="header__nav__download">
                             <a class="header__nav__download_link" href=""
                                 >DOWNLOAD</a
@@ -49,6 +57,7 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
             </header>
             <section id="home">
                 <p class="home__first__paragraph">
@@ -576,7 +585,92 @@
                 </div>
             </div>
         </aside>
-
+        <section id="contact">
+            <div class="contact__container">
+                <div class="contact__contact">
+                    <h2 class="contact__title">Contact Us</h2>
+                    <hr>
+                    <p class="contact__paragraph">We will get back to you in less than 24 hours.</p>
+                    <form action="" method="get" class="contact__form">
+                        <input type="text" class="contact__input" name="" id="" placeholder="Name">
+                        <input type="email" class="contact__input" name="" id="" placeholder="Email">
+                        <textarea name="" class="contact__textarea" id="" placeholder="Message....." rows="7" maxlength="512"></textarea>
+                    </form>
+                    <button class="contact__button">SEND MESSAGE</button>
+                </div>
+                <div class="headquarter">
+                    <h2 class="headquarter__title">Our Headquarter</h2>
+                    <hr class="headquarter__hr">
+                    <p class="headquarter__paragraph">For Customer Support and Query, Get in touch with us.</p>
+                    <div class="headquarter__info">
+                        <div class="headquarter__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3 class="headquarter__info__title">MXapp Inc.</h3>
+                        </div>
+                        <p class="headquarter__info__paragraph">4th Floor, Plot No.22, Above     Public Park <br>
+                        145 Murphy Canyon Rd. <br>
+                        Suite 100-18 <br>
+                        San Diego CA 2028
+                        </p>
+                    </div>
+                    <div class="headquarter__info">
+                        <div class="headquarter__icon">
+                            <i class="fas fa-phone"></i>
+                            <h3 class="headquarter__info__title">Telephone</h3>
+                        </div>
+                        <p class="headquarter__info__paragraph">(+060) 9898980098, (+060) 8898880088</p>
+                    </div>
+                    <div class="headquarter__info">
+                        <div class="headquarter__icon">
+                            <i class="fas fa-envelope"></i>
+                            <h3 class="headquarter__info__title">Business Inquiries</h3>
+                        </div>
+                        <p class="headquarter__info__paragraph">info@mxapp.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="footer__container">
+                <div class="footer__reserved">
+                    <p>© 2023 <a href="https://harnishdesign.net/">MXapp</a>. All Rights Reserved.</p>
+                </div>
+                <div class="footer__social">
+                    <ul class="footer__social__list">
+                        <li>
+                            <a href="https://harnishdesign.net/">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://harnishdesign.net/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://harnishdesign.net/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://harnishdesign.net/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__license">
+                    <ul class="footer__license__list">
+                        <li>
+                            <a href="https://harnishdesign.net/">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="https://harnishdesign.net/">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
         <script
             src="https://kit.fontawesome.com/26a4e91e41.js"
             crossorigin="anonymous"
@@ -585,5 +679,6 @@
         <script src="./assets/script/script.js"></script>
         <script src="./assets/script/modal.js"></script>
         <script src="./assets/script/faq.js"></script>
+        <script src="./assets/script/header.js"></script>
     </body>
 </html>
