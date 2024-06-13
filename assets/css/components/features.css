@@ -1,9 +1,6 @@
-.features__container {
-    display: flex;
-    align-items: center;
+.features {
     flex-direction: column;
     margin: 80px auto 60px auto;
-    width: 80%;
     color: #4c4d4d;
 }
 

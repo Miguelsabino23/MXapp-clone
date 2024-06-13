@@ -1,24 +1,7 @@
 .about__container {
-    display: flex;
-    align-items: center;
     flex-direction: column;
     margin: 120px auto 60px auto;
-    width: 80%;
     color: #4c4d4d;
-}
-
-.about__title {
-    font-size: 35px;
-}
-
-hr {
-    background-color: rgb(111 66 193);
-    width: 90px;
-    height: 1px;
-}
-
-.about__paragraph {
-    font-size: 20px;
 }
 
 .about__container__2 {

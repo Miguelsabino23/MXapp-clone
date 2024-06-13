@@ -2,7 +2,7 @@
     margin: 150px 0;
     width: 100%;
     height: 70vh;
-    background-image: url('../img/intro-bg-2.jpg');
+    background-image: url('/assets/img/intro-bg-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,29 +16,21 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(125, 84, 199, 0.9);
+    background-color: rgba(125, 84, 199, 0.8);
 }
 
-.download__container {
-    width: 80%;
-    margin: 80px auto 0 auto;
-    text-align: center;
+.download {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
     color: #ffffff;
-}
-
-.download__title {
-    font-size: 35px;
 }
 
 .download__hr {
     background-color: #ffffff;
 }
 
-.download__paragraph {
-    font-size: 20px;
-}
-
 .download__link {
-    margin-right: 30px;
+    margin-right: 10px;
     text-decoration: none;
 }

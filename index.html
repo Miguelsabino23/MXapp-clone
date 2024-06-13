@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/header.css" />
-        <link rel="stylesheet" href="./assets/css/home.css" />
-        <link rel="stylesheet" href="./assets/css/about.css" />
-        <link rel="stylesheet" href="./assets/css/counter.css" />
-        <link rel="stylesheet" href="./assets/css/features.css" />
-        <link rel="stylesheet" href="./assets/css/screenshot.css" />
-        <link rel="stylesheet" href="./assets/css/play.css" />
-        <link rel="stylesheet" href="./assets/css/testimonial.css">
-        <link rel="stylesheet" href="./assets/css/pricing.css">
-        <link rel="stylesheet" href="./assets/css/download.css">
-        <link rel="stylesheet" href="./assets/css/faq.css">
-        <link rel="stylesheet" href="./assets/css/subscribe.css">
-        <link rel="stylesheet" href="./assets/css/contact.css">
-        <link rel="stylesheet" href="./assets/css/footer.css">
+        <link rel="stylesheet" href="./assets/css/components/about.css" />
+        <link rel="stylesheet" href="./assets/css/components/contact.css" />
+        <link rel="stylesheet" href="./assets/css/components/counter.css" />
+        <link rel="stylesheet" href="./assets/css/components/download.css" />
+        <link rel="stylesheet" href="./assets/css/components/faq.css" />
+        <link rel="stylesheet" href="./assets/css/components/features.css" />
+        <link rel="stylesheet" href="./assets/css/components/footer.css" />
+        <link rel="stylesheet" href="./assets/css/components/header.css" />
+        <link rel="stylesheet" href="./assets/css/components/home.css" />
+        <link rel="stylesheet" href="./assets/css/components/play.css" />
+        <link rel="stylesheet" href="./assets/css/components/pricing.css" />
+        <link rel="stylesheet" href="./assets/css/components/screenshot.css" />
+        <link rel="stylesheet" href="./assets/css/components/subscribe.css" />
+        <link rel="stylesheet" href="./assets/css/components/testimonial.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/utilities.css" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -25,39 +27,61 @@
     </head>
     <body>
         <div class="back__to__top">
-            <a href="#headerr">
+            <a href="#home">
                 <i class="fa fa-chevron-up"></i>
             </a>
         </div>
-        <div class="background__paralax" id="headerr">
+        <div class="background__paralax">
             <header id="header">
-                <div class="header__container">
-                <div class="header__logo">
-                    <a href="https://harnishdesign.net/">
-                        <img
-                            src="./assets/img/logo-light.png"
-                            alt="logo que é um link para uma pagina de projetos"
-                        />
-                    </a>
+                <div class="header__container container">
+                    <div class="header__logo">
+                        <a href="https://harnishdesign.net/">
+                            <img
+                                src="./assets/img/logo-light.png"
+                                alt="logo que é um link para uma pagina de projetos"
+                            />
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul>
+                            <li>
+                                <a href="#home" class="nav__link">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="nav__link">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="#features" class="nav__link"
+                                    >FEATURES</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#screenshot" class="nav__link"
+                                    >SCREENSHOT</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#testimonial" class="nav__link"
+                                    >TESTIMONIAL</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#pricing" class="nav__link">PRICING</a>
+                            </li>
+                            <li><a href="#faq" class="nav__link">FAQ</a></li>
+                            <li>
+                                <a href="#contact" class="nav__link"
+                                    >CONTACT US</a
+                                >
+                            </li>
+                            <li class="header__nav__download">
+                                <a class="header__nav__download_link" href=""
+                                    >DOWNLOAD</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header__nav">
-                    <ul>
-                        <li><a href="#headerr" class="nav__link">HOME</a></li>
-                        <li><a href="#about" class="nav__link">ABOUT</a></li>
-                        <li><a href="#features" class="nav__link">FEATURES</a></li>
-                        <li><a href="#screenshot" class="nav__link">SCREENSHOT</a></li>
-                        <li><a href="#testimonial" class="nav__link">TESTIMONIAL</a></li>
-                        <li><a href="#pricing" class="nav__link">PRICING</a></li>
-                        <li><a href="#faq" class="nav__link">FAQ</a></li>
-                        <li><a href="#contact" class="nav__link">CONTACT US</a></li>
-                        <li class="header__nav__download">
-                            <a class="header__nav__download_link" href=""
-                                >DOWNLOAD</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </div>
             </header>
             <section id="home">
                 <p class="home__first__paragraph">
@@ -71,10 +95,10 @@
             </section>
         </div>
         <section id="about">
-            <div class="about__container">
-                <h2 class="about__title">About Our App</h2>
+            <div class="about__container container">
+                <h2 class="title">About Our App</h2>
                 <hr />
-                <p class="about__paragraph">
+                <p class="paragraph">
                     You can present your app. It is all very easy!
                 </p>
                 <div class="about__container__2">
@@ -121,25 +145,25 @@
                 </div>
             </div>
         </section>
-        <aside id="counter">
+        <aside id="counter" class="paralax">
             <div class="overlay">
-                <div class="counter__container">
-                    <div class="counter__container__box">
+                <div class="counter container">
+                    <div class="counter__box">
                         <i class="fas fa-users"></i>
                         <h4>120K</h4>
                         <p>Happy Users</p>
                     </div>
-                    <div class="counter__container__box">
+                    <div class="counter__box">
                         <i class="fas fa-star-half-alt"></i>
                         <h4>46K</h4>
                         <p>Positive Ratings</p>
                     </div>
-                    <div class="counter__container__box">
+                    <div class="counter__box">
                         <i class="fas fa-download"></i>
                         <h4>125K</h4>
                         <p>Total Download</p>
                     </div>
-                    <div class="counter__container__box">
+                    <div class="counter__box">
                         <i class="fas fa-gem"></i>
                         <h4>58K</h4>
                         <p>Premium Users</p>
@@ -148,10 +172,10 @@
             </div>
         </aside>
         <section id="features">
-            <div class="features__container">
-                <h2 class="features__title">App's Features</h2>
+            <div class="features container">
+                <h2 class="title">App's Features</h2>
                 <hr />
-                <p class="features__paragraph">
+                <p class="paragraph">
                     You can present your app features. It is all very easy!
                 </p>
                 <div class="features__counter">
@@ -248,9 +272,11 @@
         </section>
         <section id="screenshot">
             <div class="screenshot__container">
-                <h2>App Screens</h2>
+                <h2 class="title">App Screens</h2>
                 <hr />
-                <p>You can present your app screens. It is all very easy!</p>
+                <p class="paragraph">
+                    You can present your app screens. It is all very easy!
+                </p>
                 <div class="screenshot__carrosel">
                     <div class="swiper screenshot__swiper">
                         <div class="swiper-wrapper">
@@ -274,15 +300,19 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev screenshot__button__prev"></div>
-                        <div class="swiper-button-next screenshot__button__next"></div>
+                        <div
+                            class="swiper-button-prev screenshot__button__prev"
+                        ></div>
+                        <div
+                            class="swiper-button-next screenshot__button__next"
+                        ></div>
                     </div>
                 </div>
             </div>
         </section>
-        <aside id="play">
+        <aside id="play" class="paralax">
             <div class="overlay">
-                <div class="play__container">
+                <div class="play__container container">
                     <h2 class="play__title">How it's Works? Play And Watch!</h2>
                     <span class="play__iframe">
                         <i class="fas fa-play"></i>
@@ -290,76 +320,91 @@
                     <p class="play__paragraph">VIEW PROMO</p>
                 </div>
             </div>
-            <div class="play__modal ">
+            <div class="play__modal">
                 <div class="play__blackdrop"></div>
                 <div class="play__hidden">
-                    <iframe 
-                        src=//www.youtube.com/embed/PMNnEEEacCg?
-                        autoplay=1&cc_load_policy=1&controls=1&disablekb=
-                        0&enablejsapi=0&fs=1&iv_load_policy=1&loop=0&rel=
-                        0&showinfo=1&start=0&wmode=transparent&theme=dark
-                        &mute=0
-                        frameborder="0"
+                    <iframe
+                        src="https://www.youtube.com/embed/PMNnEEEacCg?autoplay=1&cc_load_policy=1&controls=1&disablekb=0&enablejsapi=0&fs=1&iv_load_policy=1&loop=0&rel=0&showinfo=1&start=0&wmode=transparent&theme=dark&mute=0"
                     ></iframe>
                     <button class="play__button">X</button>
                 </div>
-                
             </div>
         </aside>
         <section id="testimonial">
             <div class="testimonial__container">
-                <h2 class="testimonial__title">What Our Users Say’s</h2>
-                <hr>
-                <p class="testimonial__paragraph">See what our happy Customer say about app. We are proud to have our users.</p>
+                <h2 class="title">What Our Users Say’s</h2>
+                <hr />
+                <p class="paragraph">
+                    See what our happy Customer say about app. We are proud to
+                    have our users.
+                </p>
                 <div class="swiper2 testimonial__swiper">
-                
                     <div class="swiper-wrapper testimonial__wrapper">
-                      
-                      <div class="swiper-slide testimonial__slide">
-                        <i class="fa fa-quote-left"></i>
-                        <p>“Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure.”</p>
-                        <img src="./assets/img/client-sm-1.jpg" alt=""> 
-                        <strong>Jay Shah</strong> 
-                        <span>User from India</span>
-                      </div >
-                      <div class="swiper-slide testimonial__slide">
-                        <i class="fa fa-quote-left"></i>
-                        <p>I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure.”</p>
-                        <img src="./assets/img/client-sm-2.jpg" alt="">
-                        <strong>Patrick Cary</strong>
-                        <span>User from USA</span>
-                      </div>
-                      <div class="swiper-slide testimonial__slide">
-                        <i class="fa fa-quote-left"></i>
-                        <p>“Only trying it out since a few days. But up to now excellent. Seems to work flawlessly. priced simply dummy text of the printing and typesetting industry.”</p>
-                        <img src="./assets/img/client-sm-3.jpg" alt="">
-                        <strong>Dennis Jacques</strong>
-                        <span>User from Canada</span>
-                      </div>
-                      <div class="swiper-slide testimonial__slide">
-                        <i class="fa fa-quote-left"></i>
-                        <p>“I have used them twice now. Good rates, very efficient service and priced simply dummy text of the printing and typesetting industry quidam interesset his et. Excellent.”</p>
-                        <img src="./assets/img/client-sm-4.jpg" alt="">
-                        <strong>Chris Tom</strong>
-                        <span>User from UK</span>
-                      </div>
+                        <div class="swiper-slide testimonial__slide">
+                            <i class="fa fa-quote-left"></i>
+                            <p>
+                                “Easy to use, reasonably priced simply dummy
+                                text of the printing and typesetting industry.
+                                Quidam lisque persius interesset his et, in quot
+                                quidam possim iriure.”
+                            </p>
+                            <img src="./assets/img/client-sm-1.jpg" alt="" />
+                            <strong>Jay Shah</strong>
+                            <span>User from India</span>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                            <i class="fa fa-quote-left"></i>
+                            <p>
+                                I am happy Working with printing and typesetting
+                                industry. Quidam lisque persius interesset his
+                                et, in quot quidam persequeris essent possim
+                                iriure.”
+                            </p>
+                            <img src="./assets/img/client-sm-2.jpg" alt="" />
+                            <strong>Patrick Cary</strong>
+                            <span>User from USA</span>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                            <i class="fa fa-quote-left"></i>
+                            <p>
+                                “Only trying it out since a few days. But up to
+                                now excellent. Seems to work flawlessly. priced
+                                simply dummy text of the printing and
+                                typesetting industry.”
+                            </p>
+                            <img src="./assets/img/client-sm-3.jpg" alt="" />
+                            <strong>Dennis Jacques</strong>
+                            <span>User from Canada</span>
+                        </div>
+                        <div class="swiper-slide testimonial__slide">
+                            <i class="fa fa-quote-left"></i>
+                            <p>
+                                “I have used them twice now. Good rates, very
+                                efficient service and priced simply dummy text
+                                of the printing and typesetting industry quidam
+                                interesset his et. Excellent.”
+                            </p>
+                            <img src="./assets/img/client-sm-4.jpg" alt="" />
+                            <strong>Chris Tom</strong>
+                            <span>User from UK</span>
+                        </div>
                     </div>
-                    
-                    <div class="swiper-pagination2">
-                    </div>
+
+                    <div class="swiper-pagination2"></div>
                     <div class="swiper-button-prev2"></div>
                     <div class="swiper-button-next2"></div>
-                  
-                    <div class="swiper-scrollbar2"></div> 
-                  </div>
+
+                    <div class="swiper-scrollbar2"></div>
+                </div>
             </div>
-            
         </section>
         <section id="pricing">
-            <div class="pricing__container">
-                <h2 class="pricing__title">Pricing Plan</h2>
-                <hr>
-                <p class="pricing__paragraph">You can present your app pricing plan here!</p>
+            <div class="pricing container">
+                <h2 class="title">Pricing Plan</h2>
+                <hr />
+                <p class="paragraph">
+                    You can present your app pricing plan here!
+                </p>
                 <div class="pricing__box__container">
                     <div class="pricing__box">
                         <div class="pricing__box__gray">Basic</div>
@@ -388,7 +433,11 @@
                                     24/7 Support
                                 </li>
                             </ul>
-                            <a class="pricing__link__gray" href="https://harnishdesign.net/">START NOW</a>
+                            <a
+                                class="pricing__link__gray"
+                                href="https://harnishdesign.net/"
+                                >START NOW</a
+                            >
                         </div>
                     </div>
                     <div class="pricing__box">
@@ -418,7 +467,11 @@
                                     24/7 Support
                                 </li>
                             </ul>
-                            <a class="pricing__link__gray" href="https://harnishdesign.net/">START NOW</a>
+                            <a
+                                class="pricing__link__gray"
+                                href="https://harnishdesign.net/"
+                                >START NOW</a
+                            >
                         </div>
                     </div>
                     <div class="pricing__box">
@@ -448,7 +501,11 @@
                                     24/7 Support
                                 </li>
                             </ul>
-                            <a class="pricing__link__purple" href="https://harnishdesign.net/">START NOW</a>
+                            <a
+                                class="pricing__link__purple"
+                                href="https://harnishdesign.net/"
+                                >START NOW</a
+                            >
                         </div>
                     </div>
                     <div class="pricing__box">
@@ -478,7 +535,11 @@
                                     24/7 Support
                                 </li>
                             </ul>
-                            <a class="pricing__link__gray" href="https://harnishdesign.net/">START NOW</a>
+                            <a
+                                class="pricing__link__gray"
+                                href="https://harnishdesign.net/"
+                                >START NOW</a
+                            >
                         </div>
                     </div>
                 </div>
@@ -486,100 +547,172 @@
         </section>
         <aside id="download">
             <div class="download__overlay">
-                <div class="download__container">
-                    <h2 class="download__title">Get the App</h2>
-                    <hr class="download__hr">
-                    <p class="download__paragraph">Download our app! Join over 500,000 people already using Our App.</p>
-                    <a class="download__link" href="https://www.apple.com/in/app-store/">
-                        <img class="download__image" src="./assets/img/app-store.png" alt="">
-                    </a>
-                    <a class="download__link" href="https://play.google.com/store/games">
-                        <img class="download__image" src="./assets/img/google-play-store.png" alt="">
-                    </a>
+                <div class="download container">
+                    <h2 class="title">Get the App</h2>
+                    <hr class="download__hr" />
+                    <p class="paragraph">
+                        Download our app! Join over 500,000 people already using
+                        Our App.
+                    </p>
+                    <div class="download__box">
+                        <a
+                            class="download__link"
+                            href="https://www.apple.com/in/app-store/"
+                        >
+                            <img
+                                class="download__image"
+                                src="./assets/img/app-store.png"
+                                alt=""
+                            />
+                        </a>
+                        <a
+                            class="download__link"
+                            href="https://play.google.com/store/games"
+                        >
+                            <img
+                                class="download__image"
+                                src="./assets/img/google-play-store.png"
+                                alt=""
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
-                
         </aside>
         <section id="faq">
-            <div class="faq__container">
-                <h2 class="faq__title">Frequently Asked Questions</h2>
-                <hr>
-                <p class="faq__paragraph">You can present your app FAQ here!</p>
+            <div class="faq container">
+                <h2 class="title">Frequently Asked Questions</h2>
+                <hr />
+                <p class="paragraph">You can present your app FAQ here!</p>
                 <div class="faq__acordion">
-                    <hr class="faq__hr">
+                    <hr class="faq__hr" />
                     <div class="faq__acordion__item">
                         <h2 class="faq__acordion__title">
-                            <button class="faq__acordion__button">What is MXapp?</button>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <button class="faq__acordion__button">
+                                What is MXapp?
+                            </button>
+                            <i class="fa-solid fa-chevron-down faq__icon"></i>
                         </h2>
                         <div class="faq__acordion__collapse">
                             <div class="faq__acordion__body">
-                                Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet. Craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Lisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                                Mutat tacimates id sit. Ridens mediocritatem ius
+                                an, eu nec magna imperdiet. Craft beer labore
+                                wes anderson cred nesciunt sapiente ea proident.
                             </div>
                         </div>
                     </div>
-                    <hr class="faq__hr">
+                    <hr class="faq__hr" />
                     <div class="faq__acordion__item">
                         <h2 class="faq__acordion__title">
-                            <button class="faq__acordion__button">How Can I Help You?</button>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <button class="faq__acordion__button">
+                                How Can I Help You?
+                            </button>
+                            <i class="fa-solid fa-chevron-down faq__icon"></i>
                         </h2>
                         <div class="faq__acordion__collapse">
                             <div class="faq__acordion__body">
-                                Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. <br>
-                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                Iisque Anim pariatur cliche reprehenderit, enim
+                                eiusmod high life accusamus terry richardson ad
+                                squid. Food truck quinoa nesciunt laborum
+                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                put a bird on it squid single-origin coffee
+                                nulla assumenda shoreditch et. <br />
+                                Nihil anim keffiyeh helvetica, craft beer labore
+                                wes anderson cred nesciunt sapiente ea proident.
+                                Ad vegan excepteur butcher vice lomo.
                             </div>
                         </div>
                     </div>
-                    <hr class="faq__hr">
+                    <hr class="faq__hr" />
                     <div class="faq__acordion__item">
                         <h2 class="faq__acordion__title">
-                            <button class="faq__acordion__button">Is my data safe with App Showcase?</button>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <button class="faq__acordion__button">
+                                Is my data safe with App Showcase?
+                            </button>
+                            <i class="fa-solid fa-chevron-down faq__icon"></i>
                         </h2>
                         <div class="faq__acordion__collapse">
                             <div class="faq__acordion__body">
-                                Iisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet.
+                                Iisque persius interesset his et, in quot quidam
+                                persequeris vim, ad mea essent possim iriure.
+                                Mutat tacimates id sit. Ridens mediocritatem ius
+                                an, eu nec magna imperdiet.
                             </div>
                         </div>
                     </div>
-                    <hr class="faq__hr">
+                    <hr class="faq__hr" />
                     <div class="faq__acordion__item">
                         <h2 class="faq__acordion__title">
-                            <button class="faq__acordion__button">How much fees does App Showcase?</button>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <button class="faq__acordion__button">
+                                How much fees does App Showcase?
+                            </button>
+                            <i class="fa-solid fa-chevron-down faq__icon"></i>
                         </h2>
                         <div class="faq__acordion__collapse">
                             <div class="faq__acordion__body">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Food truck quinoa
+                                nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                tempor, sunt aliqua put a bird on it squid
+                                single-origin coffee nulla assumenda shoreditch
+                                et. Nihil anim keffiyeh helvetica, craft beer
+                                labore wes anderson cred nesciunt sapiente ea
+                                proident.
                             </div>
                         </div>
                     </div>
-                    <hr class="faq__hr">
+                    <hr class="faq__hr" />
                     <div class="faq__acordion__item">
                         <h2 class="faq__acordion__title">
-                            <button class="faq__acordion__button">Why app showcase one page template?</button>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <button class="faq__acordion__button">
+                                Why app showcase one page template?
+                            </button>
+                            <i class="fa-solid fa-chevron-down faq__icon"></i>
                         </h2>
                         <div class="faq__acordion__collapse">
                             <div class="faq__acordion__body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. <br>
-                                Craft beer labore wes anderson cred nesciunt sapiente ea proident. Nihil anim keffiyeh helvetica, Ad vegan excepteur butcher vice lomo.
+                                Anim pariatur cliche reprehenderit, enim eiusmod
+                                high life accusamus squid. Food truck quinoa
+                                nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                tempor, sunt aliqua put a bird on it squid
+                                single-origin coffee nulla assumenda shoreditch
+                                et. <br />
+                                Craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Nihil anim keffiyeh
+                                helvetica, Ad vegan excepteur butcher vice lomo.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="faq__acordion__box__link">Can't find it here? <a class="faq__acordion__link" href="https://harnishdesign.net/demo/react/mxapp/demo/?header=Default%20Header&intro=Intro1&intro-bg=Image&intro-content=Image&themeColor=purple#contact">Tell us your query here.</a></div>
+                <div class="faq__acordion__box__link">
+                    Can't find it here?
+                    <a
+                        class="faq__acordion__link"
+                        href="https://harnishdesign.net/demo/react/mxapp/demo/?header=Default%20Header&intro=Intro1&intro-bg=Image&intro-content=Image&themeColor=purple#contact"
+                        >Tell us your query here.</a
+                    >
+                </div>
             </div>
         </section>
         <aside id="subscribe">
             <div class="subscribe__overlay">
                 <div class="subscribe__container">
                     <h2 class="subscribe__title">Subscribe to Newsletter</h2>
-                    <hr class="subscribe__hr">
-                    <p class="subscribe__paragraph">Subscribe to receive latest news, new features and updates.</p>
+                    <hr class="subscribe__hr" />
+                    <p class="subscribe__paragraph">
+                        Subscribe to receive latest news, new features and
+                        updates.
+                    </p>
                     <div class="subscribe__form">
-                        <input class="subscribe__input" type="email" name="" id="" placeholder="Your Email Adress">
+                        <input
+                            class="subscribe__input"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Your Email Adress"
+                        />
                         <button class="subscribe__button">Subscribe</button>
                     </div>
                 </div>
@@ -589,28 +722,52 @@
             <div class="contact__container">
                 <div class="contact__contact">
                     <h2 class="contact__title">Contact Us</h2>
-                    <hr>
-                    <p class="contact__paragraph">We will get back to you in less than 24 hours.</p>
-                    <form action="" method="get" class="contact__form">
-                        <input type="text" class="contact__input" name="" id="" placeholder="Name">
-                        <input type="email" class="contact__input" name="" id="" placeholder="Email">
-                        <textarea name="" class="contact__textarea" id="" placeholder="Message....." rows="7" maxlength="512"></textarea>
+                    <hr />
+                    <p class="contact__paragraph">
+                        We will get back to you in less than 24 hours.
+                    </p>
+                    <form method="get" class="contact__form">
+                        <input
+                            type="text"
+                            class="contact__input"
+                            name="name-contact"
+                            id="name-contact"
+                            placeholder="Name"
+                        />
+                        <input
+                            type="email"
+                            class="contact__input"
+                            name="email-contact"
+                            id="email-contact"
+                            placeholder="Email"
+                        />
+                        <textarea
+                            name="message"
+                            class="contact__textarea"
+                            id="message"
+                            placeholder="Message....."
+                            rows="7"
+                            maxlength="512"
+                        ></textarea>
                     </form>
                     <button class="contact__button">SEND MESSAGE</button>
                 </div>
                 <div class="headquarter">
                     <h2 class="headquarter__title">Our Headquarter</h2>
-                    <hr class="headquarter__hr">
-                    <p class="headquarter__paragraph">For Customer Support and Query, Get in touch with us.</p>
+                    <hr class="headquarter__hr" />
+                    <p class="headquarter__paragraph">
+                        For Customer Support and Query, Get in touch with us.
+                    </p>
                     <div class="headquarter__info">
                         <div class="headquarter__icon">
                             <i class="fas fa-map-marker-alt"></i>
                             <h3 class="headquarter__info__title">MXapp Inc.</h3>
                         </div>
-                        <p class="headquarter__info__paragraph">4th Floor, Plot No.22, Above     Public Park <br>
-                        145 Murphy Canyon Rd. <br>
-                        Suite 100-18 <br>
-                        San Diego CA 2028
+                        <p class="headquarter__info__paragraph">
+                            4th Floor, Plot No.22, Above Public Park <br />
+                            145 Murphy Canyon Rd. <br />
+                            Suite 100-18 <br />
+                            San Diego CA 2028
                         </p>
                     </div>
                     <div class="headquarter__info">
@@ -618,14 +775,20 @@
                             <i class="fas fa-phone"></i>
                             <h3 class="headquarter__info__title">Telephone</h3>
                         </div>
-                        <p class="headquarter__info__paragraph">(+060) 9898980098, (+060) 8898880088</p>
+                        <p class="headquarter__info__paragraph">
+                            (+060) 9898980098, (+060) 8898880088
+                        </p>
                     </div>
                     <div class="headquarter__info">
                         <div class="headquarter__icon">
                             <i class="fas fa-envelope"></i>
-                            <h3 class="headquarter__info__title">Business Inquiries</h3>
+                            <h3 class="headquarter__info__title">
+                                Business Inquiries
+                            </h3>
                         </div>
-                        <p class="headquarter__info__paragraph">info@mxapp.com</p>
+                        <p class="headquarter__info__paragraph">
+                            info@mxapp.com
+                        </p>
                     </div>
                 </div>
             </div>
@@ -633,7 +796,10 @@
         <footer id="footer">
             <div class="footer__container">
                 <div class="footer__reserved">
-                    <p>© 2023 <a href="https://harnishdesign.net/">MXapp</a>. All Rights Reserved.</p>
+                    <p>
+                        © 2023 <a href="https://harnishdesign.net/">MXapp</a>.
+                        All Rights Reserved.
+                    </p>
                 </div>
                 <div class="footer__social">
                     <ul class="footer__social__list">
@@ -662,10 +828,14 @@
                 <div class="footer__license">
                     <ul class="footer__license__list">
                         <li>
-                            <a href="https://harnishdesign.net/">Terms of Use</a>
+                            <a href="https://harnishdesign.net/"
+                                >Terms of Use</a
+                            >
                         </li>
                         <li>
-                            <a href="https://harnishdesign.net/">Privacy Policy</a>
+                            <a href="https://harnishdesign.net/"
+                                >Privacy Policy</a
+                            >
                         </li>
                     </ul>
                 </div>

@@ -12,14 +12,6 @@
     flex-direction: column;
 }
 
-.testimonial__title {
-    font-size: 35px;
-}
-
-.testimonial__paragraph {
-    font-size: 20px;
-}
-
 .testimonial__swiper {
     overflow: hidden;
 }
