@@ -72,3 +72,13 @@
 .swiper-pagination-bullet-active {
     background-color: #c7c8c9 !important;
 }
+
+@media (max-width: 1024px) {
+    .screenshot__container {
+        width: 96%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    
+}

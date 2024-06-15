@@ -12,14 +12,6 @@
     flex-direction: column;
 }
 
-.testimonial__title {
-    font-size: 35px;
-}
-
-.testimonial__paragraph {
-    font-size: 20px;
-}
-
 .testimonial__swiper {
     overflow: hidden;
 }
@@ -50,4 +42,18 @@
 
 .swiper-pagination2 {
     margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .testimonial__container {
+        width: 96%;
+    }
+
+    .testimonial__slide {
+        padding: 40px 0;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    
 }

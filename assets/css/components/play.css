@@ -1,22 +1,10 @@
 #play {
-    background-image: url(/assets/img/1342582630-i614787.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 70vh;
-    background-attachment: fixed;
-    position: relative;
-    background-position: center;
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
 .play__container {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-    height: 100%;
     margin: 5vw auto;
     color: #ffffff;
 }
@@ -85,6 +73,7 @@
     width: 54.5vw;
     height: 69.5vh;
     user-select: none;
+    border: none;
 }
 
 .play__button {
@@ -96,4 +85,15 @@
     position: absolute;
     cursor: pointer;
     transition: ease-in 3s;
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    #play {
+        margin-top: 150px;
+    }
+
+    .play__title {
+        text-align: center;
+        width: 80%;
+    }
 }

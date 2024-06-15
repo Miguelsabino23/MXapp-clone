@@ -11,3 +11,23 @@ for (let index = 0; index < acordion.length; index++) {
         }
     })
 }
+
+const items = document.querySelectorAll('.faq__acordion__item');
+items.forEach((item) => {
+    const button = item.querySelector('.faq__acordion__button');
+    const icon = item.querySelector('.faq__icon');
+
+    item.addEventListener('click', () => {
+        const isRotated = button.classList.contains('rotate');
+        document.querySelectorAll('.faq__acordion__button').forEach((btn) => {
+            btn.classList.remove('rotate');
+        });
+
+        document.querySelectorAll('.faq__icon').forEach((icn) => {
+            icn.classList.remove('rotate');
+        });
+        button.classList.toggle('rotate', !isRotated);
+        icon.classList.toggle('rotate', !isRotated);
+    });
+});
+

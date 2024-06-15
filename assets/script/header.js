@@ -35,3 +35,17 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.header__menu-icon');
+    const navMenu = document.querySelector('.header__nav--visible');
+
+    menuIcon.addEventListener('click', function() {
+        this.classList.toggle('open');
+        navMenu.classList.toggle('open');
+    });
+});
+
+
+
+

@@ -1,23 +1,12 @@
 #pricing {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
-.pricing__container {
-    width: 80%;
+.pricing {
     margin: auto;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     color: #4c4d4d;
-}
-
-.pricing__title {
-    font-size: 35px;
-}
-
-.pricing__paragraph {
-    font-size: 20px;
 }
 
 .pricing__box__container {
@@ -95,4 +84,18 @@
 
 .pricing__link__purple {
     background-color: #6f42c1;
+}
+
+@media (max-width: 1024px) {
+    .pricing__box__container {
+        width: 94%;
+    }
+
+    .pricing__box__container {
+        flex-direction: column;
+    }
+
+    .pricing__box {
+        margin-bottom: 20px;
+    }
 }

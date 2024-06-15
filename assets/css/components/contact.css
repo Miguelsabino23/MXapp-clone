@@ -83,3 +83,27 @@
 .headquarter__info__paragraph {
     margin-left: 30px;
 }
+
+@media (max-width: 1024px) {
+    .contact__container {
+        width: 96%;
+    }
+    .headquarter {
+        width: 40%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    .contact__container {
+        flex-direction: column;
+    }
+
+    .headquarter {
+        margin-top: 20px;
+        width: 96%;
+    }
+
+    .headquarter__title {
+        font-size: 30px;
+    }
+}
