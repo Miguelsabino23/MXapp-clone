@@ -76,3 +76,25 @@ hr {
     width: 90px;
     height: 1px;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    .paralax {
+        height: 60vh;
+        
+    }
+
+    .title {
+        margin-bottom: 5px;
+    }
+
+    .paragraph {
+        margin-top: 5px;
+        text-align: center;
+    }
+}

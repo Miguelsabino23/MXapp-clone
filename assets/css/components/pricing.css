@@ -85,3 +85,17 @@
 .pricing__link__purple {
     background-color: #6f42c1;
 }
+
+@media (max-width: 1024px) {
+    .pricing__box__container {
+        width: 94%;
+    }
+
+    .pricing__box__container {
+        flex-direction: column;
+    }
+
+    .pricing__box {
+        margin-bottom: 20px;
+    }
+}

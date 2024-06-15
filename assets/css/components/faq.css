@@ -73,3 +73,25 @@
 .faq__acordion__link {
     color: #8964cc;
 }
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    .faq h2 {
+        text-align: center;
+    }
+
+    .faq p {
+        width: 80%;
+    }
+
+    .faq__acordion {
+        width: 94%;
+    }
+
+    .faq__acordion__title button {
+        text-align: left;
+    }
+
+    .faq__acordion__box__link {
+        text-align: center;
+    }
+}

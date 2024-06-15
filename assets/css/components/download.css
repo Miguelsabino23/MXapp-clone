@@ -34,3 +34,24 @@
     margin-right: 10px;
     text-decoration: none;
 }
+
+@media (max-width: 1024px) {
+    #download {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    .download p {
+        width: 90%;
+    }
+
+    .download__box {
+        text-align: center;
+        
+    }
+
+    .download__box a img {
+        width: 50%;
+    }
+}

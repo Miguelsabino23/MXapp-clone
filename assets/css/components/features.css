@@ -47,3 +47,41 @@
     border-radius: 50%;
     padding: 15px;
 }
+
+@media (max-width: 1024px) {
+    .features__counter {
+        width: 96%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    .features h2 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .features p {
+        width: 96%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .features__counter {
+        flex-direction: column;
+        margin-top: 0;
+        gap: 0;
+        align-items: center;
+    }
+
+    .features__content__box__text p {
+        text-align: start;
+    }
+
+    .features__content__box.inverted {
+        flex-direction: row-reverse;
+    }
+
+    .end {
+        text-align: start;
+    }
+}

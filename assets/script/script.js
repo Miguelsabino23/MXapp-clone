@@ -1,7 +1,18 @@
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 4,
-    spaceBetween: 10,
     loop: true,
+
+    breakpoints: {
+        
+
+        375: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        376: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+    },
 
     pagination: {
         el: '.swiper-pagination',
@@ -20,9 +31,19 @@ const swiper = new Swiper('.swiper', {
 })
 
 const swiper2 = new Swiper('.swiper2', {
-    slidesPerView: 2,
-    spaceBetween: 20,
     loop: true,
+    breakpoints: {
+        375: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            slidesPerGroup: 2,
+        },
+        376: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            slidesPerGroup: 2,
+        },
+    },
 
     pagination: {
         el: '.swiper-pagination2',
@@ -37,5 +58,4 @@ const swiper2 = new Swiper('.swiper2', {
         delay: 5000,
         pauseOnMouseEnter: true,
     },
-    slidesPerGroup: 2,
 })
